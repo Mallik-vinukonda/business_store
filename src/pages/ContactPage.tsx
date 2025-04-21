@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Layout from '../components/layout/Layout';
-import Button from '../components/ui/Button';
 
 const CONTACT_NUMBER = '+91 98765 43210'; // Update with your real contact number
 const EMAIL = 'info@ramdootdryfruits.com'; // Update with your real email
@@ -39,12 +38,12 @@ const ContactPage: React.FC = () => {
             <p className="mb-6 text-gray-600 text-center">
               For any queries, feedback, or to cancel an order, feel free to reach out to us via phone or email. Our team will respond as soon as possible.
             </p>
-            <Button as="a" href={`tel:${CONTACT_NUMBER.replace(/\s+/g, '')}`} size="lg" className="w-full mb-3">
-              Call Now
-            </Button>
-            <Button as="a" href={`mailto:${EMAIL}`} size="lg" variant="outline" className="w-full">
-              Email Us
-            </Button>
+            <div className="w-full mb-3 py-3 px-6 rounded-lg bg-primary text-white font-semibold text-center">
+              Call Now: {CONTACT_NUMBER}
+            </div>
+            <div className="w-full py-3 px-6 rounded-lg border border-primary text-primary font-semibold text-center">
+              Email Us: {EMAIL}
+            </div>
           </div>
         </div>
       </div>
