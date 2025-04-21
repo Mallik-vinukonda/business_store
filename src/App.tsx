@@ -16,6 +16,8 @@ import CheckoutPage from './pages/CheckoutPage';
 import OrderSuccessPage from './pages/OrderSuccessPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
+import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }: { children: React.ReactElement }) => {
@@ -54,6 +56,8 @@ const AppWithRouter = () => {
         <Route path="/checkout" element={<Layout><CheckoutPage /></Layout>} />
         <Route path="/order-success" element={<Layout><OrderSuccessPage /></Layout>} />
         <Route path="/login" element={<AdminLoginPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
         
         {/* Protected Admin Routes */}
         <Route 
