@@ -64,7 +64,7 @@ const HomePage = () => {
           </div>
           <div className="flex-1 flex justify-center">
             {/* Hero image from assets */}
-            <img src="/src/assets/images/c.webp" alt="Premium Dry Fruits" className="w-[320px] md:w-[400px]   bg-white/80 object-cover" />
+            <img src="/c.webp" alt="Premium Dry Fruits" className="w-[320px] md:w-[400px]   bg-white/80 object-cover" />
           </div>
         </div>
       </section>
